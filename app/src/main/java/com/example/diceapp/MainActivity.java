@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                  int numberOfDice2 = 1;
 
                  if (whichRadioButton == 1)
-                     numberOfDice = random.nextInt()+1;
+                     numberOfDice = random.nextInt(6)+1;
                  else if (whichRadioButton == 2){
                      numberOfDice = random.nextInt(6) + 1;
                      numberOfDice2 = random.nextInt(6) + 1;
@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
                              break;
                      }
                  }
+                 if(whichRadioButton == 2){
+                     dice_image2.setVisibility(View.VISIBLE);
+                 }
 
                  if(whichRadioButton == 2) {
                      switch (numberOfDice) {
@@ -101,22 +104,22 @@ public class MainActivity extends AppCompatActivity {
                      }
                      switch (numberOfDice2) {
                          case 1:
-                             dice_image.setImageResource(R.drawable.dice1);
+                             dice_image2.setImageResource(R.drawable.dice1);
                              break;
                          case 2:
-                             dice_image.setImageResource(R.drawable.dice2);
+                             dice_image2.setImageResource(R.drawable.dice2);
                              break;
                          case 3:
-                             dice_image.setImageResource(R.drawable.dice3);
+                             dice_image2.setImageResource(R.drawable.dice3);
                              break;
                          case 4:
-                             dice_image.setImageResource(R.drawable.dice4);
+                             dice_image2.setImageResource(R.drawable.dice4);
                              break;
                          case 5:
-                             dice_image.setImageResource(R.drawable.dice5);
+                             dice_image2.setImageResource(R.drawable.dice5);
                              break;
                          case 6:
-                             dice_image.setImageResource(R.drawable.dice6);
+                             dice_image2.setImageResource(R.drawable.dice6);
                              break;
                      }
                  }
